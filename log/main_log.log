@@ -1,0 +1,175 @@
+[2023-05-01 12:05:27,578] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-01 12:05:32,924] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-01 12:05:33,060] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8066
+[2023-05-01 12:05:36,292] INFO django.server (187) "GET /mainapp/?page=2 HTTP/1.1" 200 8070
+[2023-05-01 12:05:38,272] INFO django.server (187) "GET /mainapp/contacts/ HTTP/1.1" 200 3967
+[2023-05-01 12:05:40,439] INFO django.server (187) "GET /admin/ HTTP/1.1" 200 8833
+[2023-05-01 12:05:40,863] INFO django.server (187) "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[2023-05-01 12:05:40,871] INFO django.server (187) "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[2023-05-01 12:05:40,879] INFO django.server (187) "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[2023-05-01 12:05:40,887] INFO django.server (187) "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[2023-05-01 12:05:40,911] INFO django.server (187) "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[2023-05-01 12:05:40,919] INFO django.server (187) "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[2023-05-01 12:05:40,927] INFO django.server (187) "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2023-05-01 12:05:40,959] INFO django.server (187) "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2023-05-01 12:05:40,959] INFO django.server (187) "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2023-05-01 12:05:41,159] INFO django.server (187) "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2023-05-01 12:05:41,175] INFO django.server (187) "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2023-05-01 12:05:41,207] INFO django.server (187) "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2023-05-01 12:09:40,020] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\mainapp\views.py changed, reloading.
+[2023-05-01 12:09:42,334] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-01 12:10:29,848] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\mainapp\views.py changed, reloading.
+[2023-05-01 12:16:39,315] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-01 12:16:40,707] ERROR django.request (241) Internal Server Error: /mainapp/
+Traceback (most recent call last):
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'log_view' not found. 'log_view' is not a valid view function or pattern name.
+[2023-05-01 12:16:40,723] ERROR django.server (187) "GET /mainapp/ HTTP/1.1" 500 197866
+[2023-05-01 12:18:21,257] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-01 12:18:28,337] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8149
+[2023-05-01 12:18:32,123] ERROR django.request (241) Internal Server Error: /mainapp/log_view/
+Traceback (most recent call last):
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "c:\VSprojects\TestProject\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+[2023-05-01 12:18:32,131] ERROR django.server (187) "GET /mainapp/log_view/ HTTP/1.1" 500 180634
+[2023-05-01 12:18:58,244] INFO django.server (187) "GET /mainapp/log_view/ HTTP/1.1" 200 14073
+[2023-05-01 12:20:05,191] INFO django.server (187) "GET /mainapp/log_download/ HTTP/1.1" 200 10496
+[2023-05-01 12:20:30,856] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8149
+[2023-05-01 12:20:33,688] INFO django.server (187) "POST /mainapp/add_to_basket/1/ HTTP/1.1" 302 0
+[2023-05-01 12:20:33,816] INFO django.server (187) "GET /mainapp/basket/ HTTP/1.1" 200 4822
+[2023-05-01 12:20:38,247] INFO django.server (187) "POST /mainapp/remove_from_basket/34/ HTTP/1.1" 302 0
+[2023-05-01 12:20:38,343] INFO django.server (187) "GET /mainapp/basket/ HTTP/1.1" 200 3646
+[2023-05-01 12:20:41,332] INFO django.server (187) "GET /mainapp/log_view/ HTTP/1.1" 200 14804
+[2023-05-01 12:21:08,533] INFO django.server (187) "GET /authapp/profile/ HTTP/1.1" 200 5011
+[2023-05-01 12:21:08,589] INFO django.server (187) "GET /media/users/photo_2022-11-03_14-41-20.jpg HTTP/1.1" 200 13049
+[2023-05-01 12:22:30,664] INFO django.server (187) "GET /authapp/profile/ HTTP/1.1" 200 5090
+[2023-05-01 12:22:32,257] INFO django.server (187) "GET /mainapp/log_view/ HTTP/1.1" 200 15244
+[2023-05-01 12:34:54,621] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-01 12:35:09,179] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-01 12:35:10,827] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 17131
+[2023-05-01 12:35:11,099] INFO django.server (187) "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+[2023-05-01 12:35:11,099] INFO django.server (187) "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12378
+[2023-05-01 12:35:11,139] INFO django.server (187) "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[2023-05-01 12:35:16,325] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 17129
+[2023-05-01 12:35:21,178] INFO django.server (187) "GET /mainapp/?page=2 HTTP/1.1" 200 17140
+[2023-05-01 12:36:21,573] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
+[2023-05-01 12:36:23,386] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-01 12:41:19,733] INFO django.server (187) "GET /mainapp/?page=2 HTTP/1.1" 200 17141
+[2023-05-01 12:41:19,757] INFO django.server (187) "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[2023-05-01 12:41:19,757] INFO django.server (187) "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[2023-05-01 12:41:19,813] INFO django.server (187) "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[2023-05-01 12:44:40,679] INFO django.server (187) "GET /mainapp/?page=2 HTTP/1.1" 200 17140
+[2023-05-01 12:44:40,695] INFO django.server (187) "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[2023-05-01 12:44:40,703] INFO django.server (187) "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[2023-05-01 12:44:40,743] INFO django.server (187) "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[2023-05-01 12:44:43,943] INFO django.server (187) "GET /mainapp/?page=1 HTTP/1.1" 200 17136
+[2023-05-01 12:44:55,122] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-01 12:45:00,299] INFO django.server (187) "GET /mainapp/?page=1 HTTP/1.1" 200 17137
+[2023-05-01 12:45:04,726] INFO django.server (187) "POST /mainapp/add_to_basket/1/ HTTP/1.1" 302 0
+[2023-05-01 12:45:04,950] INFO django.server (187) "GET /mainapp/basket/ HTTP/1.1" 200 13813
+[2023-05-01 12:45:09,633] INFO django.server (187) "POST /mainapp/remove_from_basket/35/ HTTP/1.1" 302 0
+[2023-05-01 12:45:09,800] INFO django.server (187) "GET /mainapp/basket/ HTTP/1.1" 200 12636
+[2023-05-03 14:01:25,213] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-03 14:01:34,960] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-03 14:01:35,944] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 17130
+[2023-05-03 14:01:36,072] INFO django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 304 0
+[2023-05-03 14:01:36,184] INFO django.server (187) "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[2023-05-03 14:01:36,240] INFO django.server (187) "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[2023-05-03 14:01:36,272] INFO django.server (187) "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[2023-05-03 14:01:36,392] INFO django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 304 0
+[2023-05-03 14:01:36,464] INFO django.server (187) "GET /media/products/images.jpg HTTP/1.1" 304 0
+[2023-05-03 14:01:36,480] INFO django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 304 0
+[2023-05-03 14:01:36,544] INFO django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 304 0
+[2023-05-03 14:01:36,544] INFO django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 304 0
+[2023-05-03 14:01:39,619] INFO django.server (187) "GET /mainapp/?page=2 HTTP/1.1" 200 17141

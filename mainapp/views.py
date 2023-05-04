@@ -120,7 +120,7 @@ def add_to_basket(request, product_id):
         basket_item.quantity += 1
         basket_item.save()
 
-    return redirect('http://127.0.0.1:8000/mainapp/basket/')
+    return redirect('https://onlinesh0p.onrender.com/mainapp/basket/')
 
 
 def remove_from_basket(request, basket_item_id):
@@ -128,7 +128,7 @@ def remove_from_basket(request, basket_item_id):
     basket_item.delete()
     messages.success(
         request, _("Product has been removed from your basket!"))
-    return redirect('http://127.0.0.1:8000/mainapp/basket/')
+    return redirect('https://onlinesh0p.onrender.com/mainapp/basket/')
 
 
 class ProductModelViewSet(ModelViewSet):
