@@ -173,3 +173,21 @@ django.template.exceptions.TemplateDoesNotExist: base.html
 [2023-05-03 14:01:36,544] INFO django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 304 0
 [2023-05-03 14:01:36,544] INFO django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 304 0
 [2023-05-03 14:01:39,619] INFO django.server (187) "GET /mainapp/?page=2 HTTP/1.1" 200 17141
+[2023-05-04 13:23:55,375] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-04 13:23:59,624] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-04 13:24:00,114] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8024
+[2023-05-04 13:24:00,280] INFO django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 200 3208
+[2023-05-04 13:24:00,288] INFO django.server (187) "GET /media/products/images.jpg HTTP/1.1" 200 2894
+[2023-05-04 13:24:00,302] INFO django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 200 5153
+[2023-05-04 13:24:00,314] INFO django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 200 8534
+[2023-05-04 13:24:00,393] INFO django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 200 3356
+[2023-05-04 13:24:00,403] INFO django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 200 3754
+[2023-05-04 13:24:03,067] INFO django.server (187) "GET /authapp/login/ HTTP/1.1" 200 3448
+[2023-05-04 13:24:05,655] INFO django.server (187) "POST /authapp/login/ HTTP/1.1" 302 0
+[2023-05-04 13:24:05,700] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8148
+[2023-05-04 13:24:07,516] WARNING django.request (241) Not Found: /mainapp/schema-swagger-ui
+[2023-05-04 13:24:07,517] WARNING django.server (187) "GET /mainapp/schema-swagger-ui HTTP/1.1" 404 4780
+[2023-05-04 13:25:33,989] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-04 13:25:34,043] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8148
+[2023-05-04 13:25:36,947] WARNING django.request (241) Not Found: /mainapp/schema-swagger-ui
+[2023-05-04 13:25:36,948] WARNING django.server (187) "GET /mainapp/schema-swagger-ui HTTP/1.1" 404 4780
