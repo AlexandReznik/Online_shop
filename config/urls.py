@@ -23,7 +23,6 @@ from drf_yasg import openapi
 from rest_framework import permissions
 from django.conf import settings
 from django.conf.urls.static import static
-import debug_toolbar
 
 
 router = DefaultRouter()
