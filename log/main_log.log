@@ -367,3 +367,5 @@ django.template.exceptions.TemplateDoesNotExist: base.html
 [2023-05-11 11:58:01,261] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8726
 [2023-05-11 11:58:03,377] INFO django.server (187) "GET /swagger/ HTTP/1.1" 200 2381
 [2023-05-11 11:58:03,577] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 12:11:32,690] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
+[2023-05-11 12:11:34,689] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
