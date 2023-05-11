@@ -17,6 +17,7 @@
         <a href="{% url 'mainapp:basket' %}" class="nav-link">Basket</a>
         <a href="{% url 'mainapp:categories' %}" class="nav-link">Categories</a>
         {% comment %} <a href='https://onlinesh0p.onrender.com/api/' class="nav-link">API</a> {% endcomment %}
+        {% if user.is_authenticated %}
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               API
@@ -27,6 +28,7 @@
               <li><a class="dropdown-item" href="https://onlinesh0p.onrender.com/api/">Rest</a></li>
             </ul>
           </li>
+          {% endif %}
     </div>
     </div>
     </div>
