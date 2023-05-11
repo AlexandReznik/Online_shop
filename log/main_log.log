@@ -191,3 +191,7 @@ django.template.exceptions.TemplateDoesNotExist: base.html
 [2023-05-04 13:25:34,043] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8148
 [2023-05-04 13:25:36,947] WARNING django.request (241) Not Found: /mainapp/schema-swagger-ui
 [2023-05-04 13:25:36,948] WARNING django.server (187) "GET /mainapp/schema-swagger-ui HTTP/1.1" 404 4780
+[2023-05-04 13:53:42,481] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-04 13:53:49,874] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-04 13:53:50,239] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8047
+[2023-05-04 13:54:02,188] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8047
