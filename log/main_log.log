@@ -195,3 +195,175 @@ django.template.exceptions.TemplateDoesNotExist: base.html
 [2023-05-04 13:53:49,874] INFO django.server (187) "GET / HTTP/1.1" 302 0
 [2023-05-04 13:53:50,239] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8047
 [2023-05-04 13:54:02,188] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8047
+[2023-05-11 11:21:25,600] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:21:40,959] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-11 11:21:41,432] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8039
+[2023-05-11 11:21:41,511] WARNING django.request (241) Not Found: /media/products/download_1.jpg
+[2023-05-11 11:21:41,519] WARNING django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:41,959] WARNING django.request (241) Not Found: /media/products/download_sXe6vH8.jpg
+[2023-05-11 11:21:41,967] WARNING django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:42,007] WARNING django.request (241) Not Found: /media/products/download_3.jpg
+[2023-05-11 11:21:42,015] WARNING django.request (241) Not Found: /media/products/download_2.jpg
+[2023-05-11 11:21:42,015] WARNING django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:42,015] WARNING django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:42,023] WARNING django.request (241) Not Found: /media/products/images.jpg
+[2023-05-11 11:21:42,023] WARNING django.server (187) "GET /media/products/images.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:42,031] WARNING django.request (241) Not Found: /media/products/download_4.jpg
+[2023-05-11 11:21:42,031] WARNING django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:52,897] INFO django.server (187) "GET /authapp/login/ HTTP/1.1" 200 3444
+[2023-05-11 11:21:55,216] INFO django.server (187) "POST /authapp/login/ HTTP/1.1" 302 0
+[2023-05-11 11:21:55,320] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8163
+[2023-05-11 11:21:55,344] WARNING django.request (241) Not Found: /media/products/download_1.jpg
+[2023-05-11 11:21:55,352] WARNING django.request (241) Not Found: /media/products/download_3.jpg
+[2023-05-11 11:21:55,352] WARNING django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:55,352] WARNING django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:55,376] WARNING django.request (241) Not Found: /media/products/download_sXe6vH8.jpg
+[2023-05-11 11:21:55,384] WARNING django.request (241) Not Found: /media/products/download_2.jpg
+[2023-05-11 11:21:55,384] WARNING django.request (241) Not Found: /media/products/images.jpg
+[2023-05-11 11:21:55,392] WARNING django.request (241) Not Found: /media/products/download_4.jpg
+[2023-05-11 11:21:55,392] WARNING django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:55,400] WARNING django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:55,400] WARNING django.server (187) "GET /media/products/images.jpg HTTP/1.1" 404 179
+[2023-05-11 11:21:55,400] WARNING django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 404 179
+[2023-05-11 11:22:02,798] INFO django.server (187) "GET /admin/ HTTP/1.1" 200 8833
+[2023-05-11 11:22:02,846] WARNING django.request (241) Not Found: /static/admin/css/dark_mode.css
+[2023-05-11 11:22:02,846] WARNING django.server (187) "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+[2023-05-11 11:22:31,453] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8167
+[2023-05-11 11:22:31,509] WARNING django.request (241) Not Found: /media/products/download_1.jpg
+[2023-05-11 11:22:31,517] WARNING django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 404 179
+[2023-05-11 11:22:31,541] WARNING django.request (241) Not Found: /media/products/download_3.jpg
+[2023-05-11 11:22:31,549] WARNING django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 404 179
+[2023-05-11 11:22:31,685] WARNING django.request (241) Not Found: /media/products/download_sXe6vH8.jpg
+[2023-05-11 11:22:31,701] WARNING django.request (241) Not Found: /media/products/download_4.jpg
+[2023-05-11 11:22:31,717] WARNING django.request (241) Not Found: /media/products/images.jpg
+[2023-05-11 11:22:31,725] WARNING django.request (241) Not Found: /media/products/download_2.jpg
+[2023-05-11 11:22:31,733] WARNING django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 404 179
+[2023-05-11 11:22:31,757] WARNING django.server (187) "GET /media/products/images.jpg HTTP/1.1" 404 179
+[2023-05-11 11:22:31,757] WARNING django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 404 179
+[2023-05-11 11:22:31,773] WARNING django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 404 179
+[2023-05-11 11:25:09,279] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\urls.py changed, reloading.
+[2023-05-11 11:25:11,602] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:25:14,413] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8167
+[2023-05-11 11:25:14,445] WARNING django.request (241) Not Found: /media/products/download_1.jpg
+[2023-05-11 11:25:14,445] WARNING django.request (241) Not Found: /media/products/download_3.jpg
+[2023-05-11 11:25:14,445] WARNING django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 404 179
+[2023-05-11 11:25:14,453] WARNING django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 404 179
+[2023-05-11 11:25:14,493] WARNING django.request (241) Not Found: /media/products/download_sXe6vH8.jpg
+[2023-05-11 11:25:14,493] WARNING django.request (241) Not Found: /media/products/download_2.jpg
+[2023-05-11 11:25:14,501] WARNING django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 404 179
+[2023-05-11 11:25:14,501] WARNING django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 404 179
+[2023-05-11 11:25:14,549] WARNING django.request (241) Not Found: /media/products/images.jpg
+[2023-05-11 11:25:14,565] WARNING django.server (187) "GET /media/products/images.jpg HTTP/1.1" 404 179
+[2023-05-11 11:25:14,581] WARNING django.request (241) Not Found: /media/products/download_4.jpg
+[2023-05-11 11:25:14,589] WARNING django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 404 179
+[2023-05-11 11:25:48,587] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\urls.py changed, reloading.
+[2023-05-11 11:25:50,692] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:26:14,131] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8163
+[2023-05-11 11:26:14,163] WARNING django.request (241) Not Found: /media/products/download_1.jpg
+[2023-05-11 11:26:14,171] WARNING django.request (241) Not Found: /media/products/download_3.jpg
+[2023-05-11 11:26:14,171] WARNING django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 404 179
+[2023-05-11 11:26:14,171] WARNING django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 404 179
+[2023-05-11 11:26:14,195] WARNING django.request (241) Not Found: /media/products/download_sXe6vH8.jpg
+[2023-05-11 11:26:14,195] WARNING django.request (241) Not Found: /media/products/download_2.jpg
+[2023-05-11 11:26:14,203] WARNING django.request (241) Not Found: /media/products/images.jpg
+[2023-05-11 11:26:14,211] WARNING django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 404 179
+[2023-05-11 11:26:14,211] WARNING django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 404 179
+[2023-05-11 11:26:14,211] WARNING django.server (187) "GET /media/products/images.jpg HTTP/1.1" 404 179
+[2023-05-11 11:26:14,219] WARNING django.request (241) Not Found: /media/products/download_4.jpg
+[2023-05-11 11:26:14,227] WARNING django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 404 179
+[2023-05-11 11:27:00,796] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
+[2023-05-11 11:27:02,928] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:27:09,019] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8163
+[2023-05-11 11:27:09,635] INFO django.server (187) "GET /media/products/download_4.jpg HTTP/1.1" 200 3208
+[2023-05-11 11:27:09,691] INFO django.server (187) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 200 5153
+[2023-05-11 11:27:09,699] INFO django.server (187) "GET /media/products/download_3.jpg HTTP/1.1" 200 3754
+[2023-05-11 11:27:09,715] INFO django.server (187) "GET /media/products/images.jpg HTTP/1.1" 200 2894
+[2023-05-11 11:27:09,723] INFO django.server (187) "GET /media/products/download_1.jpg HTTP/1.1" 200 8534
+[2023-05-11 11:27:09,747] INFO django.server (187) "GET /media/products/download_2.jpg HTTP/1.1" 200 3356
+[2023-05-11 11:27:14,536] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8163
+[2023-05-11 11:27:16,571] INFO django.server (187) "GET /admin/ HTTP/1.1" 200 8833
+[2023-05-11 11:27:16,603] INFO django.server (187) "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[2023-05-11 11:28:30,478] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8175
+[2023-05-11 11:28:35,705] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8175
+[2023-05-11 11:28:54,442] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8170
+[2023-05-11 11:38:25,391] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\urls.py changed, reloading.
+[2023-05-11 11:38:27,628] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:38:50,920] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\urls.py changed, reloading.
+[2023-05-11 11:39:39,756] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:39:46,465] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8170
+[2023-05-11 11:41:10,659] WARNING django.request (241) Not Found: /swagger/json
+[2023-05-11 11:41:10,659] WARNING django.server (187) "GET /swagger/json HTTP/1.1" 404 3062
+[2023-05-11 11:41:30,035] WARNING django.request (241) Not Found: /swagger/json/
+[2023-05-11 11:41:30,035] WARNING django.server (187) "GET /swagger/json/ HTTP/1.1" 404 3065
+[2023-05-11 11:41:36,625] INFO django.server (187) "GET /swagger/ HTTP/1.1" 200 2381
+[2023-05-11 11:41:37,001] INFO django.server (187) "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+[2023-05-11 11:41:37,017] INFO django.server (187) "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+[2023-05-11 11:41:37,033] INFO django.server (187) "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 143858
+[2023-05-11 11:41:37,049] INFO django.server (187) "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+[2023-05-11 11:41:37,065] INFO django.server (187) "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 324275
+[2023-05-11 11:41:37,089] INFO django.server (187) "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+[2023-05-11 11:41:37,137] INFO django.server (187) "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1086481
+[2023-05-11 11:41:37,313] INFO django.server (187) "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+[2023-05-11 11:41:37,449] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 11:42:33,579] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\urls.py changed, reloading.
+[2023-05-11 11:42:35,494] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:42:47,445] INFO django.server (187) "GET /redoc/ HTTP/1.1" 200 924
+[2023-05-11 11:42:47,613] INFO django.server (187) "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 200 2566
+[2023-05-11 11:42:47,669] INFO django.server (187) "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 200 998563
+[2023-05-11 11:42:47,821] INFO django.server (187) "GET /redoc/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 11:42:47,821] INFO django.server (187) "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 200 4969
+[2023-05-11 11:43:41,706] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 11:45:00,677] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
+[2023-05-11 11:45:00,880] INFO django.server (187) "GET /swagger/ HTTP/1.1" 200 2381
+[2023-05-11 11:45:01,024] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 11:45:02,462] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:45:06,000] INFO django.server (187) "GET /authapp/login/ HTTP/1.1" 200 3564
+[2023-05-11 11:45:08,351] INFO django.server (187) "POST /authapp/login/ HTTP/1.1" 302 0
+[2023-05-11 11:45:08,391] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8172
+[2023-05-11 11:45:10,265] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 11:45:22,564] INFO django.server (187) "GET /swagger/ HTTP/1.1" 200 2381
+[2023-05-11 11:45:22,740] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 11:49:52,730] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
+[2023-05-11 11:49:55,099] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:50:30,225] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:50:39,897] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:51:20,114] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
+[2023-05-11 11:51:22,354] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:51:25,843] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:51:30,149] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:51:31,139] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:51:44,680] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:51:49,850] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:52:01,516] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-11 11:52:01,580] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:52:24,706] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:53:58,768] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
+[2023-05-11 11:54:00,702] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:54:06,757] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:54:07,686] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:55:00,749] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:55:17,867] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2023-05-11 11:55:17,995] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:55:50,577] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
+[2023-05-11 11:55:52,686] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2023-05-11 11:55:56,108] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:55:57,503] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:55:59,322] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:56:01,016] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8736
+[2023-05-11 11:56:05,934] INFO django.server (187) "GET /admin/ HTTP/1.1" 200 8833
+[2023-05-11 11:57:21,250] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8727
+[2023-05-11 11:57:23,113] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:23,169] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:23,177] INFO django.server (187) code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+[2023-05-11 11:57:23,177] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:23,385] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:26,496] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:26,520] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:26,528] INFO django.server (187) code 400, message Bad request version ('p<')
+[2023-05-11 11:57:26,528] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:26,560] ERROR django.server (167) You're accessing the development server over HTTPS, but it only supports HTTP.
+[2023-05-11 11:57:31,026] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8727
+[2023-05-11 11:57:41,918] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8727
+[2023-05-11 11:58:01,261] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 8726
+[2023-05-11 11:58:03,377] INFO django.server (187) "GET /swagger/ HTTP/1.1" 200 2381
+[2023-05-11 11:58:03,577] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930

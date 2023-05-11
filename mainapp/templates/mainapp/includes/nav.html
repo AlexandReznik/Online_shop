@@ -18,7 +18,17 @@
             target="_blank">Logs</a>{% endif %}
             <a href="{% url 'mainapp:basket' %}" class="nav-link">Basket</a>
             <a href="{% url 'mainapp:categories' %}" class="nav-link">Categories</a>
-            <a href='https://onlinesh0p.onrender.com/api/' class="nav-link">API</a>
+            {% comment %} <a href='http://127.0.0.1:8000/swagger/' class="nav-link">API</a> {% endcomment %}
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  API
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://onlinesh0p.onrender.com/swagger/">Swagger</a></li>
+                  <li><a class="dropdown-item" href="https://onlinesh0p.onrender.com/redoc/">Redoc</a></li>
+                </ul>
+              </li>
         
         </div>
         </div>
