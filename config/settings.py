@@ -140,41 +140,41 @@ LOGIN_REDIRECT_URL = "mainapp:mainapp"
 LOGOUT_REDIRECT_URL = "mainapp:mainapp"
 RECIPIENTS_EMAIL = ['saha.reznik2004@gmail.com']
 DEFAULT_FROM_EMAIL = 'sashaaaareznik@gmail.com'
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = "var/email-messages/"
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = "var/email-messages/"
 
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
-LOG_FILE = BASE_DIR / "log" / "main_log.log"
+# LOG_FILE = BASE_DIR / "log" / "main_log.log"
 
-LOGGING = {
-    "version": 1,
-    "disable_existing_loggers": False,
-    "formatters": {
-        "console": {
-            "format": "[%(asctime)s] %(levelname)s %(name)s (%(lineno)d) %(message)s"
-        },
-    },
-    "handlers": {
-        "file": {
-            "level": "DEBUG",
-            "class": "logging.FileHandler",
-            "filename": LOG_FILE,
-            "formatter": "console",
-        },
-        "console": {"class": "logging.StreamHandler", "formatter": "console"},
-    },
-    "loggers": {
-        "django": {"level": "INFO", "handlers": ["file", "console"]},
-        # "mainapp": {
-        #     "level": "DEBUG",
-        #     "handlers": ["file"],
-        # },
-    },
-}
+# LOGGING = {
+#     "version": 1,
+#     "disable_existing_loggers": False,
+#     "formatters": {
+#         "console": {
+#             "format": "[%(asctime)s] %(levelname)s %(name)s (%(lineno)d) %(message)s"
+#         },
+#     },
+#     "handlers": {
+#         "file": {
+#             "level": "DEBUG",
+#             "class": "logging.FileHandler",
+#             "filename": LOG_FILE,
+#             "formatter": "console",
+#         },
+#         "console": {"class": "logging.StreamHandler", "formatter": "console"},
+#     },
+#     "loggers": {
+#         "django": {"level": "INFO", "handlers": ["file", "console"]},
+#         # "mainapp": {
+#         #     "level": "DEBUG",
+#         #     "handlers": ["file"],
+#         # },
+#     },
+# }
 
 
 CACHES = {
@@ -186,3 +186,11 @@ CACHES = {
         },
     }
 }
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = str(os.getenv('EMAIL_HOST_USER'))
+EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_HOST_PASSWORD'))
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

@@ -369,3 +369,22 @@ django.template.exceptions.TemplateDoesNotExist: base.html
 [2023-05-11 11:58:03,577] INFO django.server (187) "GET /swagger/?format=openapi HTTP/1.1" 200 4930
 [2023-05-11 12:11:32,690] INFO django.utils.autoreload (266) C:\VSprojects\TestProject\config\settings.py changed, reloading.
 [2023-05-11 12:11:34,689] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2024-01-07 16:15:02,969] INFO django.utils.autoreload (637) Watching for file changes with StatReloader
+[2024-01-07 16:15:09,742] INFO django.server (161) "GET / HTTP/1.1" 302 0
+[2024-01-07 16:15:09,763] INFO django.server (161) "GET /mainapp/ HTTP/1.1" 200 7972
+[2024-01-07 16:15:09,779] INFO django.server (161) "GET /media/products/download_3.jpg HTTP/1.1" 200 3754
+[2024-01-07 16:15:09,779] INFO django.server (161) "GET /media/products/download_1.jpg HTTP/1.1" 200 8534
+[2024-01-07 16:15:09,838] INFO django.server (161) "GET /media/products/download_4.jpg HTTP/1.1" 200 3208
+[2024-01-07 16:15:09,839] INFO django.server (161) "GET /media/products/download_sXe6vH8.jpg HTTP/1.1" 200 5153
+[2024-01-07 16:15:09,839] INFO django.server (161) "GET /media/products/images.jpg HTTP/1.1" 200 2894
+[2024-01-07 16:15:09,839] INFO django.server (161) "GET /media/products/download_2.jpg HTTP/1.1" 200 3356
+[2024-01-07 16:15:10,128] WARNING django.request (224) Not Found: /favicon.ico
+[2024-01-07 16:15:10,128] WARNING django.server (161) "GET /favicon.ico HTTP/1.1" 404 3026
+[2024-01-07 16:15:13,178] INFO django.server (161) "GET /mainapp/?page=2 HTTP/1.1" 200 7976
+[2024-01-07 16:15:14,980] INFO django.server (161) "GET /mainapp/?page=1 HTTP/1.1" 200 7972
+[2024-01-07 16:15:18,708] INFO django.server (161) "GET /mainapp/1/detail/ HTTP/1.1" 200 4067
+[2024-01-07 16:15:23,073] INFO django.server (161) "GET /mainapp/ HTTP/1.1" 200 7972
+[2024-01-07 16:15:25,006] INFO django.server (161) "GET /mainapp/contacts/ HTTP/1.1" 200 3873
+[2024-01-07 16:15:33,937] INFO django.server (161) "POST /mainapp/contacts/ HTTP/1.1" 302 0
+[2024-01-07 16:15:33,970] INFO django.server (161) "GET /mainapp/contacts/ HTTP/1.1" 200 4691
+[2024-01-07 16:22:44,027] INFO django.utils.autoreload (251) /Users/oleksandrreznik/Projects/Online_shop/config/settings.py changed, reloading.
