@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from django.views.generic import RedirectView
 from rest_framework.routers import DefaultRouter
-from mainapp.views import ProductModelViewSet, CategoryModelViewSet
+from mainapp.views import ProductModelViewSet, CategoryModelViewSet, BasketItemViewSet, CommentModelViewSet
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from rest_framework import permissions
@@ -28,6 +28,8 @@ from django.conf.urls.static import static
 router = DefaultRouter()
 router.register('products', ProductModelViewSet)
 router.register('categories', CategoryModelViewSet)
+router.register('basketitems', BasketItemViewSet)
+router.register('comments', CommentModelViewSet)
 
 
 schema_view = get_schema_view(

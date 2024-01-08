@@ -29,10 +29,6 @@ class CustomLogoutView(LogoutView):
         return super().dispatch(request, *args, **kwargs)
 
 
-# class ProfileView(TemplateView):
-#     template_name = 'authapp/profile.html'
-
-
 class ProfileView(View):
     form_class = UserUpdateForm
     template_name = 'authapp/profile.html'

@@ -1,12 +1,11 @@
 from django.utils import timezone
 from mainapp import models as mainapp_models
 from .forms import ContactForm
-from django.views.generic import TemplateView, ListView, View
+from django.views.generic import ListView, View
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse, HttpResponseRedirect, FileResponse
-from django.contrib.auth.mixins import UserPassesTestMixin
+from django.http import HttpResponse, HttpResponseRedirect
 from django.utils.translation import gettext_lazy as _
 from django.contrib import messages
 from mainapp import forms
@@ -14,11 +13,11 @@ from config.settings import RECIPIENTS_EMAIL
 from django.urls import reverse_lazy
 from django.shortcuts import get_object_or_404
 from django.contrib import messages
-from .models import Product, BasketItem, Category
+from .models import Product, BasketItem, Category, Comment
 from rest_framework.viewsets import ModelViewSet
-from .serializers import ProductModelSerializer, CategoryModelSerializer
+from .serializers import ProductModelSerializer, CategoryModelSerializer, BasketItemModelSerializer, CommentModelSerializer
 from django.core.paginator import Paginator
-from config import settings
+from .permissions import ReadOnly
 
 
 def basket(request):
@@ -134,31 +133,26 @@ def remove_from_basket(request, basket_item_id):
 class ProductModelViewSet(ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductModelSerializer
+    permission_classes = [ReadOnly]
 
 
 class CategoryModelViewSet(ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategoryModelSerializer
+    permission_classes = [ReadOnly]
 
 
-class LogView(TemplateView):
-    template_name = "mainapp/log_view.html"
-
-    def get_context_data(self, **kwargs):
-        context = super(LogView, self).get_context_data(**kwargs)
-        log_slice = []
-        with open(settings.LOG_FILE, "r") as log_file:
-            for i, line in enumerate(log_file):
-                if i == 1000:  # first 1000 lines
-                    break
-                log_slice.insert(0, line)  # append at start
-            context["log"] = "".join(log_slice)
-        return context
+class BasketItemViewSet(ModelViewSet):
+    queryset = BasketItem.objects.all()
+    serializer_class = BasketItemModelSerializer
+    permission_classes = [ReadOnly]
 
 
-class LogDownloadView(UserPassesTestMixin, View):
-    def test_func(self):
-        return self.request.user.is_superuser
+class CommentModelViewSet(ModelViewSet):
+    queryset = Comment.objects.all()
+    serializer_class = CommentModelSerializer
+    permission_classes = [ReadOnly]
 
-    def get(self, *args, **kwargs):
-        return FileResponse(open(settings.LOG_FILE, "rb"))
+
+
+
