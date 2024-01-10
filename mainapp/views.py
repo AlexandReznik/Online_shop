@@ -13,11 +13,10 @@ from config.settings import RECIPIENTS_EMAIL
 from django.urls import reverse_lazy
 from django.shortcuts import get_object_or_404
 from django.contrib import messages
-from .models import Product, BasketItem, Category, Comment
+from .models import Product, BasketItem, Category
 from rest_framework.viewsets import ModelViewSet
-from .serializers import ProductModelSerializer, CategoryModelSerializer, BasketItemModelSerializer, CommentModelSerializer
+from .serializers import ProductModelSerializer, CategoryModelSerializer
 from django.core.paginator import Paginator
-from .permissions import ReadOnly
 
 
 def basket(request):
@@ -133,25 +132,14 @@ def remove_from_basket(request, basket_item_id):
 class ProductModelViewSet(ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductModelSerializer
-    permission_classes = [ReadOnly]
 
 
 class CategoryModelViewSet(ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategoryModelSerializer
-    permission_classes = [ReadOnly]
 
 
-class BasketItemViewSet(ModelViewSet):
-    queryset = BasketItem.objects.all()
-    serializer_class = BasketItemModelSerializer
-    permission_classes = [ReadOnly]
 
-
-class CommentModelViewSet(ModelViewSet):
-    queryset = Comment.objects.all()
-    serializer_class = CommentModelSerializer
-    permission_classes = [ReadOnly]
 
 
 
